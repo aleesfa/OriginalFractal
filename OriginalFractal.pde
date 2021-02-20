@@ -12,14 +12,15 @@ public void shell(float x, float y, int len)
   int val;
   if(len <10)
   {
-    circle(x, y, len);
+    ellipse(x, y, len, len);
     fill((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
+    //triangle(x + len, y + len, 
     //shell(x+10, y+10, len);
   }
   else
   {
     val = len/2;
-    circle(x, y, val);
+    ellipse(x, y, val, val);
     fill((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
     shell(x, y, val);
   }
